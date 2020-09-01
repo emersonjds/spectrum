@@ -4,6 +4,8 @@ import "./App.css";
 import Home from "./Pages/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import NavMenu from "./components/Nav";
+
 function App() {
   return (
     <div className="App">
@@ -21,6 +23,7 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <NavMenu />
       <Home />
     </div>
   );
