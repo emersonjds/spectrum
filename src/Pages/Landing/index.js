@@ -18,6 +18,7 @@ import {
   DropdownItem,
   NavbarText,
 } from "reactstrap";
+import Section from '../../components/Section';
 
 export default function Landing() {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,7 +69,14 @@ export default function Landing() {
             <Button color="primary">Learn More</Button>
           </p>
         </Jumbotron>
+        <Section>
+        <Container>
+         <h1>Emerson</h1>
+        </Container>
+      </Section>
       </Container>
+      
+      
     </>
   );
 }
