@@ -18,7 +18,8 @@ import {
   DropdownItem,
   NavbarText,
 } from "reactstrap";
-import Section from '../../components/Section';
+import Section from "../../components/Section";
+import "./style.css";
 
 export default function Landing() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,57 +27,74 @@ export default function Landing() {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <>
-      <div>
+      <Container>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand href="/">Logo</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink href="/components/">Oportunidade de Empregos</NavLink>
+              </NavItem>
+
+              <NavItem>
+                <NavLink href="https://github.com/reactstrap/reactstrap">
+                  Profissionais Cadastrados
+                </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">
-                  GitHub
+                  Cadastrar Vagas
                 </NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <NavLink href="https://github.com/reactstrap/reactstrap">
+                  Cursos
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/reactstrap/reactstrap">
+                  Empresas
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/reactstrap/reactstrap">
+                  Parceiros
+                </NavLink>
+              </NavItem>
             </Nav>
-            <NavbarText>Simple Text</NavbarText>
+            <NavbarText>
+              <Button>Login</Button>
+            </NavbarText>
           </Collapse>
         </Navbar>
-      </div>
-      <Container>
-        <Jumbotron>
-          <h1 className="display-3">Spectrum</h1>
-          <p className="lead">Autistas nas melhores vagas do mercado</p>
-          <hr className="my-2" />
-          {/* <p>
-            It uses utility classes for typography and spacing to space content
-            out within the larger container.
-          </p> */}
-          <p className="lead">
-            <Button color="primary">Learn More</Button>
-          </p>
-        </Jumbotron>
-        <Section>
+        <Section bkgColor={"#BDA687"}>
+          <Container>
+            <Row>
+              <Col md={6}>Image</Col>
+              <Col md={6}>
+                <div className="textMainBanner">
+                  Spectrum é uma plataforma digital que oferece oportunidades de
+                  emprego para autistas e consultoria para empresas que
+                  pretendem conhecer e inclui-los no mercado de trabalho. Além
+                  disso, por meio de voluntários cadastrados, são oferecidos
+                  cursos gratuitos a pessoas que estão no espectro e pagos para
+                  quem se interessar pelo projeto. É uma forma de criar vínculos
+                  e compreender melhor a importância das relações entre
+                  neurotípicos e neurodiversos.
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </Section>
         <Container>
-         <h1>Emerson</h1>
+          <h3>Ultimas vagas cadastradas</h3>
         </Container>
-      </Section>
+
+        <Section>
+          <h4>Area de Vagas</h4>
+        </Section>
       </Container>
-      
-      
     </>
   );
 }

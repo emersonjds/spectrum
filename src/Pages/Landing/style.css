@@ -1,0 +1,11 @@
+.textMainBanner {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  font-weight: 20px;
+  color: #F2F2F2 !important;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
