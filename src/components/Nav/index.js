@@ -12,7 +12,11 @@ import {
   DropdownMenu,
   DropdownItem,
   NavbarText,
+  Button,
 } from "reactstrap";
+
+import { Link } from "react-router-dom";
+import logo from "../../assets/img/logo.png";
 
 const NavMenu = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,32 +25,40 @@ const NavMenu = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Spectrum</NavbarBrand>
+      <Navbar color="#FFF3f1" light expand="md">
+        <NavbarBrand href="/">
+          <Link to="/">
+            <img src={logo} alt="" height="180" />
+          </Link>
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/opportunities/">Oportunidade de Empregos</NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink href="#">Cadastras Vaga</NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink href="/professionais">Profissionais Cadastrados</NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink href="#">Cursos</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
-              </NavLink>
+              <NavLink href="#">Empresas</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem>
+              <NavLink href="#">Parceiros</NavLink>
+            </NavItem>
+            <NavbarText>
+              <Button>Fazer Login</Button>
+            </NavbarText>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
     </div>

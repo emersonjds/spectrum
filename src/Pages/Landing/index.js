@@ -1,71 +1,20 @@
 import React, { useState } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Jumbotron,
-  Button,
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
-} from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import Section from "../../components/Section";
 import "./style.css";
 import { Link } from "react-router-dom";
 import CarouselArea from "../../components/Carrousel";
 import Footer from "../../components/Footer";
 import mainImg from "../../assets/img/main.png";
+import NavMenu from "../../components/Nav";
+import CardComponent from "../../components/Card";
+import officeImg from "../../assets/img/office.png";
 
 export default function Landing() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
   return (
     <>
+      <NavMenu />
       <Container>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Logo</NavbarBrand>
-          <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar>
-              <NavItem>
-                <NavLink href="/components/">Oportunidade de Empregos</NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink href="#">Profissionais Cadastrados</NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink href="/opportunities">
-                  Profissionais Cadastrados
-                </NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink href="#">Cursos</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">Empresas</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">Parceiros</NavLink>
-              </NavItem>
-            </Nav>
-            <NavbarText>
-              <Button>Login</Button>
-            </NavbarText>
-          </Collapse>
-        </Navbar>
         <Section bkgColor={"#BDA687"}>
           <Container>
             <Row>
@@ -107,6 +56,20 @@ export default function Landing() {
 
         <Section>
           <CarouselArea />
+        </Section>
+        <h3>Cursos Disponiveis</h3>
+        <Section>
+          <Row>
+            <Col md={4}>
+              <CardComponent imgCard={officeImg} />
+            </Col>
+            <Col md={4}>
+              <CardComponent imgCard={officeImg} />
+            </Col>
+            <Col md={4}>
+              <CardComponent imgCard={officeImg} />
+            </Col>
+          </Row>
         </Section>
       </Container>
       <Footer />
