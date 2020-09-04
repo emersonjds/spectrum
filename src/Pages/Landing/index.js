@@ -20,6 +20,10 @@ import {
 } from "reactstrap";
 import Section from "../../components/Section";
 import "./style.css";
+import { Link } from "react-router-dom";
+import CarouselArea from "../../components/Carrousel";
+import Footer from "../../components/Footer";
+import mainImg from "../../assets/img/main.png";
 
 export default function Landing() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,29 +42,23 @@ export default function Landing() {
               </NavItem>
 
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
+                <NavLink href="#">Profissionais Cadastrados</NavLink>
+              </NavItem>
+
+              <NavItem>
+                <NavLink href="/opportunities">
                   Profissionais Cadastrados
                 </NavLink>
               </NavItem>
+
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  Cadastrar Vagas
-                </NavLink>
+                <NavLink href="#">Cursos</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  Cursos
-                </NavLink>
+                <NavLink href="#">Empresas</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  Empresas
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  Parceiros
-                </NavLink>
+                <NavLink href="#">Parceiros</NavLink>
               </NavItem>
             </Nav>
             <NavbarText>
@@ -71,8 +69,24 @@ export default function Landing() {
         <Section bkgColor={"#BDA687"}>
           <Container>
             <Row>
-              <Col md={6}>Image</Col>
-              <Col md={6}>
+              <Col
+                md={6}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <img src={mainImg} alt="imagem vaga" fluid height="100%" />
+              </Col>
+              <Col
+                md={6}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
                 <div className="textMainBanner">
                   Spectrum é uma plataforma digital que oferece oportunidades de
                   emprego para autistas e consultoria para empresas que
@@ -92,9 +106,10 @@ export default function Landing() {
         </Container>
 
         <Section>
-          <h4>Area de Vagas</h4>
+          <CarouselArea />
         </Section>
       </Container>
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,13 @@
+.slick-slide {
+  height: 350px !important;
+  display: flex;
+}
+
+.slick-slide .slick-active .slick-current> :first-child {
+  display: flex !important;
+}
+
+.slick-slider .slick-initialized {
+  height: 350px;
+  display: flex;
+}
