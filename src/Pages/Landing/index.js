@@ -7,11 +7,10 @@ import CarouselArea from "../../components/Carrousel";
 import Footer from "../../components/Footer";
 import mainImg from "../../assets/img/main.png";
 import NavMenu from "../../components/Nav";
+import CardComponent from "../../components/Card";
+import officeImg from "../../assets/img/office.png";
 
 export default function Landing() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
   return (
     <>
       <NavMenu />
@@ -57,6 +56,20 @@ export default function Landing() {
 
         <Section>
           <CarouselArea />
+        </Section>
+        <h3>Cursos Disponiveis</h3>
+        <Section>
+          <Row>
+            <Col md={4}>
+              <CardComponent imgCard={officeImg} />
+            </Col>
+            <Col md={4}>
+              <CardComponent imgCard={officeImg} />
+            </Col>
+            <Col md={4}>
+              <CardComponent imgCard={officeImg} />
+            </Col>
+          </Row>
         </Section>
       </Container>
       <Footer />

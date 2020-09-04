@@ -53,10 +53,10 @@ const NavMenu = (props) => {
             <NavItem>
               <NavLink href="#">Parceiros</NavLink>
             </NavItem>
+            <NavbarText>
+              <Button>Fazer Login</Button>
+            </NavbarText>
           </Nav>
-          <NavbarText>
-            <Button>Login</Button>
-          </NavbarText>
         </Collapse>
       </Navbar>
     </div>
