@@ -27,21 +27,23 @@ const NavMenu = (props) => {
     <div>
       <Navbar color="#FFF3f1" light expand="md">
         <NavbarBrand href="/">
-          <img src={logo} alt="" height="180" />
+          <Link to="/">
+            <img src={logo} alt="" height="180" />
+          </Link>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Oportunidade de Empregos</NavLink>
+              <NavLink href="/opportunities/">Oportunidade de Empregos</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="#">Profissionais Cadastrados</NavLink>
+              <NavLink href="#">Cadastras Vaga</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="/opportunities">Profissionais Cadastrados</NavLink>
+              <NavLink href="/professionais">Profissionais Cadastrados</NavLink>
             </NavItem>
 
             <NavItem>
