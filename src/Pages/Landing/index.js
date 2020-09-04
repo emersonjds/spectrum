@@ -18,7 +18,12 @@ import {
   DropdownItem,
   NavbarText,
 } from "reactstrap";
-import Section from '../../components/Section';
+import Section from "../../components/Section";
+import "./style.css";
+import { Link } from "react-router-dom";
+import CarouselArea from "../../components/Carrousel";
+import Footer from "../../components/Footer";
+import mainImg from "../../assets/img/main.png";
 
 export default function Landing() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,57 +31,85 @@ export default function Landing() {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <>
-      <div>
+      <Container>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand href="/">Logo</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink href="/components/">Oportunidade de Empregos</NavLink>
               </NavItem>
+
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  GitHub
+                <NavLink href="#">Profissionais Cadastrados</NavLink>
+              </NavItem>
+
+              <NavItem>
+                <NavLink href="/opportunities">
+                  Profissionais Cadastrados
                 </NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+
+              <NavItem>
+                <NavLink href="#">Cursos</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">Empresas</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">Parceiros</NavLink>
+              </NavItem>
             </Nav>
-            <NavbarText>Simple Text</NavbarText>
+            <NavbarText>
+              <Button>Login</Button>
+            </NavbarText>
           </Collapse>
         </Navbar>
-      </div>
-      <Container>
-        <Jumbotron>
-          <h1 className="display-3">Spectrum</h1>
-          <p className="lead">Autistas nas melhores vagas do mercado</p>
-          <hr className="my-2" />
-          {/* <p>
-            It uses utility classes for typography and spacing to space content
-            out within the larger container.
-          </p> */}
-          <p className="lead">
-            <Button color="primary">Learn More</Button>
-          </p>
-        </Jumbotron>
-        <Section>
+        <Section bkgColor={"#BDA687"}>
+          <Container>
+            <Row>
+              <Col
+                md={6}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <img src={mainImg} alt="imagem vaga" fluid height="100%" />
+              </Col>
+              <Col
+                md={6}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <div className="textMainBanner">
+                  Spectrum é uma plataforma digital que oferece oportunidades de
+                  emprego para autistas e consultoria para empresas que
+                  pretendem conhecer e inclui-los no mercado de trabalho. Além
+                  disso, por meio de voluntários cadastrados, são oferecidos
+                  cursos gratuitos a pessoas que estão no espectro e pagos para
+                  quem se interessar pelo projeto. É uma forma de criar vínculos
+                  e compreender melhor a importância das relações entre
+                  neurotípicos e neurodiversos.
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </Section>
         <Container>
-         <h1>Emerson</h1>
+          <h3>Ultimas vagas cadastradas</h3>
         </Container>
-      </Section>
+
+        <Section>
+          <CarouselArea />
+        </Section>
       </Container>
-      
-      
+      <Footer />
     </>
   );
 }
