@@ -25,6 +25,8 @@ import {
 } from "reactstrap";
 import Image from "react-bootstrap/Image";
 import micro from "../../assets/img/enterprises/micro.jpg";
+import fiap from "../../assets/img/enterprises/fiap.jpeg";
+import vivo from "../../assets/img/enterprises/vivo.jpeg";
 import selo from "../../assets/img/Frame.png";
 
 export default function VacancyArea() {
@@ -100,16 +102,6 @@ export default function VacancyArea() {
 
         <TitlePage>Conheça Empresas que já estão com a gente</TitlePage>
         <Row>
-          <Col md={2}>
-            <BoxEnterprise>
-              <Image src={micro} thumbnail width="100%" height="100%" />
-            </BoxEnterprise>
-          </Col>
-          <Col md={2}>
-            <BoxEnterprise>
-              <Image src={micro} thumbnail width="100%" height="100%" />
-            </BoxEnterprise>
-          </Col>
           <Col md={2}>
             <BoxEnterprise>
               <Image src={micro} thumbnail width="100%" height="100%" />
