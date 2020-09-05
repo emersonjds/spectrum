@@ -38,7 +38,12 @@ export default function Landing() {
                   justifyContent: "center",
                 }}
               >
-                <img src={mainImg} alt="imagem vaga" fluid height="100%" />
+                <img
+                  src={mainImg}
+                  alt="imagem vaga"
+                  fluid="true"
+                  height="100%"
+                />
               </Col>
               <Col
                 md={6}
