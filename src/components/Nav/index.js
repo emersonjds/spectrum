@@ -39,11 +39,11 @@ const NavMenu = (props) => {
             </NavItem>
 
             <NavItem>
-              <NavLink href="#">Cadastras Vaga</NavLink>
+              <NavLink href="/vacancies">Cadastras Vaga</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="/professionais">Profissionais Cadastrados</NavLink>
+              <NavLink href="/professional">Profissionais Cadastrados</NavLink>
             </NavItem>
 
             <NavItem>
