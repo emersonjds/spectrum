@@ -18,7 +18,7 @@ import VacancyCard from "../CardVacancy";
 export default function CarouselArea() {
   return (
     <>
-      <Carousel itemsToShow={4}>
+      <Carousel itemsToShow={4} style={{ marginBottom: 25 }}>
         {newVacancies.map((vacancy) => (
           <Item>
             <VacancyCard vacancie={vacancy} />
