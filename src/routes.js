@@ -4,6 +4,9 @@ import Landing from "./Pages/Landing";
 import Opportunities from "./Pages/Opportunities";
 import VacancyArea from "./Pages/Vacancy";
 import Professional from "./Pages/Professional";
+import Courses from "./Pages/Courses";
+import EnterpriseArea from "./Pages/EnterpriseArea";
+import Partners from "./Pages/Partners";
 
 export default function Routes() {
   return (
@@ -13,6 +16,9 @@ export default function Routes() {
         <Route path="/opportunities" exact={true} component={Opportunities} />
         <Route path="/vacancies" exact={true} component={VacancyArea} />
         <Route path="/professional" exact={true} component={Professional} />
+        <Route path="/courses" exact={true} component={Courses} />
+        <Route path="/enterprises" exact={true} component={EnterpriseArea} />
+        <Route path="/partners" exact={true} component={Partners} />
 
         {/* <Route path="/sobre" component={AutistArea} /> */}
       </Switch>
