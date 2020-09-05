@@ -6,13 +6,13 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
   NavbarText,
   Button,
+  NavLink,
 } from "reactstrap";
 
 import { Link } from "react-router-dom";
@@ -35,25 +35,41 @@ const NavMenu = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
+              <NavLink tag={Link} to="/opportunities">
+                Oportunidade de Emprego
+              </NavLink>
+            </NavItem>
+            {/* <NavItem>
+
               <NavLink href="/opportunities/">Oportunidade de Empregos</NavLink>
+            </NavItem> */}
+
+            <NavItem>
+              <NavLink tag={Link} to="/vacancies">
+                Cadastras Vaga
+              </NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="#">Cadastras Vaga</NavLink>
+              <NavLink tag={Link} to="/professional">
+                Profissionais Cadastrados
+              </NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="/professionais">Profissionais Cadastrados</NavLink>
-            </NavItem>
-
-            <NavItem>
-              <NavLink href="#">Cursos</NavLink>
+              <NavLink tag={Link} to="/courses">
+                Cursos
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Empresas</NavLink>
+              <NavLink tag={Link} to="/enterprises">
+                Empresas
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Parceiros</NavLink>
+              <NavLink tag={Link} to="/partners">
+                Parceiros
+              </NavLink>
             </NavItem>
             <NavbarText>
               <Button>Fazer Login</Button>

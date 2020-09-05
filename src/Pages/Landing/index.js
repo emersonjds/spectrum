@@ -9,6 +9,18 @@ import mainImg from "../../assets/img/main.png";
 import NavMenu from "../../components/Nav";
 import CardComponent from "../../components/Card";
 import officeImg from "../../assets/img/office.png";
+import partner_1 from "../../assets/img/partner.png";
+import partner from "../../assets/img/friendlyPartner.png";
+
+import {
+  BoxParner,
+  BoxImage,
+  InternalBox,
+  BoxText,
+  BoxTextTitle,
+  BoxTextSubtitle,
+  BoxTextLink,
+} from "./styles.js";
 
 export default function Landing() {
   return (
@@ -56,6 +68,45 @@ export default function Landing() {
 
         <Section>
           <CarouselArea />
+        </Section>
+
+        <Section>
+          <Row>
+            <Col md={6}>
+              <BoxParner>
+                <InternalBox>
+                  <BoxImage>
+                    <img src={partner_1} alt="" />
+                  </BoxImage>
+                  <BoxText>
+                    <BoxTextTitle>Selo para empresas</BoxTextTitle>
+                    <BoxTextSubtitle>
+                      Cursos, palestras, instruções, dúvidas e diversos assuntos
+                      conversando com autistas de várias áreas de atuação
+                    </BoxTextSubtitle>
+                    <BoxTextLink>Ver mais...</BoxTextLink>
+                  </BoxText>
+                </InternalBox>
+              </BoxParner>
+            </Col>
+            <Col md={6}>
+              <BoxParner>
+                <InternalBox>
+                  <BoxImage>
+                    <img src={partner} alt="" />
+                  </BoxImage>
+                  <BoxText>
+                    <BoxTextTitle>Selo para parceiros</BoxTextTitle>
+                    <BoxTextSubtitle>
+                      Quer interagir mais com pessoas autistas e não sabe como?
+                      Que tal oferecer um curso da sua área?
+                    </BoxTextSubtitle>
+                    <BoxTextLink>Ver mais...</BoxTextLink>
+                  </BoxText>
+                </InternalBox>
+              </BoxParner>
+            </Col>
+          </Row>
         </Section>
         <h3>Cursos Disponiveis</h3>
         <Section>
