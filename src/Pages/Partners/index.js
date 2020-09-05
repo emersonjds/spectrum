@@ -1,11 +1,11 @@
 import React from "react";
-import NavMenu from "../../components/Nav";
+import NavEnterprise from "../../components/NavEnterprise";
 import Footer from "../../components/Footer";
 
 export default function Partners() {
   return (
     <>
-      <NavMenu />
+      <NavEnterprise />
       <Footer />
     </>
   );
