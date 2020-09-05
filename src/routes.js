@@ -7,6 +7,7 @@ import Professional from "./Pages/Professional";
 import Courses from "./Pages/Courses";
 import EnterpriseArea from "./Pages/EnterpriseArea";
 import Partners from "./Pages/Partners";
+import Profile from "./Pages/Profile";
 
 export default function Routes() {
   return (
@@ -18,7 +19,8 @@ export default function Routes() {
         <Route path="/professional" exact={true} component={Professional} />
         <Route path="/courses" exact={true} component={Courses} />
         <Route path="/enterprises" exact={true} component={EnterpriseArea} />
-        <Route path="/partners" exact={true} component={Partners} />
+        <Route path="/profile" exact={true} component={Profile} />
+        <Route path="/enterpriseArea" exact={true} component={Partners} />
       </Switch>
     </BrowserRouter>
   );

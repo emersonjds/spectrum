@@ -18,7 +18,7 @@ import {
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/img/logo.png";
 
-const NavMenu = (props) => {
+const NavEnterprise = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [modal, setModal] = useState(false);
   const location = useLocation();
@@ -47,72 +47,39 @@ const NavMenu = (props) => {
             }}
           >
             <NavItem>
-              <NavLink tag={Link} to="/opportunities">
-                Oportunidade de Emprego
-              </NavLink>
+              <NavLink>Ultimas vagas Cadastradas</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/vacancies">
-                Cadastrar Vaga
-              </NavLink>
+              <NavLink>Perfis Selecionados</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink tag={Link} to="/professional">
-                Profissionais Cadastrados
-              </NavLink>
+              <NavLink>Consultorias Agendadas</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink tag={Link} to="/courses">
-                Cursos
-              </NavLink>
+              <NavLink>Entrevistas do Dia</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>Meus Cursos</NavLink>
             </NavItem>
 
-            <NavItem>
-              <NavLink tag={Link} to="/enterprises">
-                Parceiros
-              </NavLink>
-            </NavItem>
             <NavbarText>
               <Button
-                onClick={toggleModal}
                 style={{
                   backgroundColor: "#9B519A",
                   color: "#FFF",
                   width: "10rem",
                 }}
               >
-                Fazer Login
+                Sair
               </Button>
             </NavbarText>
           </Nav>
         </Collapse>
-        <div>
-          <Modal isOpen={modal} toggle={toggleModal}>
-            <ModalHeader toggle={toggleModal}>Area de Login</ModalHeader>
-            <ModalBody
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                flexDirection: "column",
-                height: 200,
-              }}
-            >
-              <Link to="/profile">
-                <Button color="success">Ja tenho cadastro</Button>
-              </Link>
-
-              <Link to="/enterpriseArea">
-                <Button color="info">Logar como Empresa</Button>
-              </Link>
-            </ModalBody>
-          </Modal>
-        </div>
       </Navbar>
     </div>
   );
 };
 
-export default NavMenu;
+export default NavEnterprise;

@@ -1,5 +1,16 @@
 import React, { useState } from "react";
-import { Container, Row, Col } from "reactstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  buttonLabel,
+  className,
+} from "reactstrap";
 import Section from "../../components/Section";
 import "./style.css";
 import { Link } from "react-router-dom";
@@ -25,6 +36,10 @@ import {
 } from "./styles.js";
 
 export default function Landing() {
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
+
   return (
     <>
       <NavMenu />

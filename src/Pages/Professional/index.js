@@ -11,18 +11,7 @@ import {
   Description,
 } from "./styles.js";
 
-import {
-  Row,
-  Col,
-  Input,
-  Button,
-  Form,
-  FormGroup,
-  Label,
-  FormText,
-} from "reactstrap";
-
-import professional_1 from "../../assets/img/candidates/prof_1.png";
+import { Row, Col, Input, Button, FormGroup, Label } from "reactstrap";
 
 import { candidates } from "../../mock";
 

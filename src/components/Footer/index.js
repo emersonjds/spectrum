@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
 import { Row, Col } from "reactstrap";
 import imgFooter from "../../assets/img/img-footer.png";
@@ -10,12 +10,7 @@ import {
   FaMailBulk,
 } from "react-icons/fa";
 
-import {
-  ContainerSocial,
-  ContainerContacts,
-  LineSocial,
-  LineContacts,
-} from "./styles";
+import { ContainerSocial, LineSocial } from "./styles";
 
 export default function Footer() {
   return (
