@@ -7,7 +7,7 @@ export default styled.div`
   flex-direction: column;
   height: 250px;
   width: 100%;
-  background-color: #683bb7;
+  /* background-color: #683bb7; */
   color: #fff;
   margin: 0 10px;
   font-size: 1em;

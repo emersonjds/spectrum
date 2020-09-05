@@ -19,8 +19,6 @@ export default function Routes() {
         <Route path="/courses" exact={true} component={Courses} />
         <Route path="/enterprises" exact={true} component={EnterpriseArea} />
         <Route path="/partners" exact={true} component={Partners} />
-
-        {/* <Route path="/sobre" component={AutistArea} /> */}
       </Switch>
     </BrowserRouter>
   );

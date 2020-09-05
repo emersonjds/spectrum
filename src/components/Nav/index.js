@@ -6,13 +6,10 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   NavbarText,
   Button,
   NavLink,
+  Container,
 } from "reactstrap";
 
 import { Link } from "react-router-dom";
@@ -33,20 +30,23 @@ const NavMenu = (props) => {
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav
+            className="mr-auto"
+            navbar
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              width: "61vw",
+            }}
+          >
             <NavItem>
               <NavLink tag={Link} to="/opportunities">
                 Oportunidade de Emprego
               </NavLink>
             </NavItem>
-            {/* <NavItem>
-
-              <NavLink href="/opportunities/">Oportunidade de Empregos</NavLink>
-            </NavItem> */}
-
             <NavItem>
               <NavLink tag={Link} to="/vacancies">
-                Cadastras Vaga
+                Cadastrar Vaga
               </NavLink>
             </NavItem>
 
@@ -72,7 +72,15 @@ const NavMenu = (props) => {
               </NavLink>
             </NavItem>
             <NavbarText>
-              <Button>Fazer Login</Button>
+              <Button
+                style={{
+                  backgroundColor: "#9B519A",
+                  color: "#FFF",
+                  width: "10rem",
+                }}
+              >
+                Fazer Login
+              </Button>
             </NavbarText>
           </Nav>
         </Collapse>

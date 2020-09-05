@@ -12,6 +12,8 @@ import officeImg from "../../assets/img/office.png";
 import partner_1 from "../../assets/img/partner.png";
 import partner from "../../assets/img/friendlyPartner.png";
 
+import { courseCards } from "../../mock";
+
 import {
   BoxParner,
   BoxImage,
@@ -38,7 +40,12 @@ export default function Landing() {
                   justifyContent: "center",
                 }}
               >
-                <img src={mainImg} alt="imagem vaga" fluid height="100%" />
+                <img
+                  src={mainImg}
+                  alt="imagem vaga"
+                  fluid="true"
+                  height="100%"
+                />
               </Col>
               <Col
                 md={6}
@@ -62,9 +69,10 @@ export default function Landing() {
             </Row>
           </Container>
         </Section>
-        <Container>
-          <h3>Ultimas vagas cadastradas</h3>
-        </Container>
+
+        <h3 style={{ marginTop: 20, marginBottom: 20 }}>
+          Ultimas vagas cadastradas
+        </h3>
 
         <Section>
           <CarouselArea />
@@ -108,18 +116,14 @@ export default function Landing() {
             </Col>
           </Row>
         </Section>
-        <h3>Cursos Disponiveis</h3>
+        <h3 style={{ marginTop: 20, marginBottom: 20 }}>Cursos Disponiveis </h3>
         <Section>
           <Row>
-            <Col md={4}>
-              <CardComponent imgCard={officeImg} />
-            </Col>
-            <Col md={4}>
-              <CardComponent imgCard={officeImg} />
-            </Col>
-            <Col md={4}>
-              <CardComponent imgCard={officeImg} />
-            </Col>
+            {courseCards.map((cardCourse) => (
+              <Col md={3}>
+                <CardComponent card={cardCourse} />
+              </Col>
+            ))}
           </Row>
         </Section>
       </Container>

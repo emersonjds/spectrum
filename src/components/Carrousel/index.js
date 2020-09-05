@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
@@ -11,20 +11,20 @@ import {
   CardSubtitle,
   Button,
 } from "reactstrap";
+import { newVacancies } from "../../mock";
+
+import VacancyCard from "../CardVacancy";
 
 export default function CarouselArea() {
   return (
-    <Carousel itemsToShow={4}>
-      <Item>
-        <h4>Professor Particular</h4>
-        <p>Casa</p>
-        <p>Description</p>
-      </Item>
-      <Item>2</Item>
-      <Item>3</Item>
-      <Item>4</Item>
-      <Item>5</Item>
-      <Item>6</Item>
-    </Carousel>
+    <>
+      <Carousel itemsToShow={4} style={{ marginBottom: 25 }}>
+        {newVacancies.map((vacancy) => (
+          <Item>
+            <VacancyCard vacancie={vacancy} />
+          </Item>
+        ))}
+      </Carousel>
+    </>
   );
 }
