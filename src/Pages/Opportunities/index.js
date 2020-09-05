@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Container, Row, Col } from "reactstrap";
-import Section from "../../components/Section";
+import React from "react";
+import { Row, Col } from "reactstrap";
+
 import {
   VacancyCard,
   Title,
@@ -11,13 +11,9 @@ import {
   TitlePage,
 } from "./styles.js";
 
-import { Link } from "react-router-dom";
-import CarouselArea from "../../components/Carrousel";
 import Footer from "../../components/Footer";
-import mainImg from "../../assets/img/main.png";
+
 import NavMenu from "../../components/Nav";
-import CardComponent from "../../components/Card";
-import officeImg from "../../assets/img/office.png";
 
 export default function Opportunities() {
   return (

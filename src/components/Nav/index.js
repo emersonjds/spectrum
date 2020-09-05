@@ -9,7 +9,6 @@ import {
   NavbarText,
   Button,
   NavLink,
-  Container,
 } from "reactstrap";
 
 import { Link } from "react-router-dom";
@@ -61,13 +60,9 @@ const NavMenu = (props) => {
                 Cursos
               </NavLink>
             </NavItem>
+
             <NavItem>
               <NavLink tag={Link} to="/enterprises">
-                Empresas
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink tag={Link} to="/partners">
                 Parceiros
               </NavLink>
             </NavItem>
