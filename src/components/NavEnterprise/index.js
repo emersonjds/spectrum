@@ -47,33 +47,23 @@ const NavEnterprise = (props) => {
             }}
           >
             <NavItem>
-              <NavLink tag={Link} to="/opportunities">
-                Oportunidade de Emprego
-              </NavLink>
+              <NavLink>Ultimas vagas Cadastradas</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/vacancies">
-                Cadastrar Vaga
-              </NavLink>
+              <NavLink>Perfis Selecionados</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink tag={Link} to="/professional">
-                Profissionais Cadastrados
-              </NavLink>
+              <NavLink>Consultorias Agendadas</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink tag={Link} to="/courses">
-                Cursos
-              </NavLink>
+              <NavLink>Entrevistas do Dia</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>Meus Cursos</NavLink>
             </NavItem>
 
-            <NavItem>
-              <NavLink tag={Link} to="/enterprises">
-                Parceiros
-              </NavLink>
-            </NavItem>
             <NavbarText>
               <Button
                 style={{
