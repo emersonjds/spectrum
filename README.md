@@ -1,6 +1,7 @@
 ## Spectrum Platform
 
-<p align="center"> Hackathon FIAP </p>
+<p align="center"> Hackathon FIAP - plataforma disponivel em : https://hack-spectrum.netlify.app
+</p>
 
 <hr>
 
@@ -21,6 +22,7 @@
 - [x] React elastic carousel
 - [x] Styled Components
 - [x] CSS4
+- [x] Netlify
 
 ## Usage
 
