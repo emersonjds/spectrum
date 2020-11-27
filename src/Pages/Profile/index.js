@@ -48,7 +48,13 @@ export default function Profile() {
                 <SubtitleContainerCouse>
                   Um curso da professora Renata Lis
                 </SubtitleContainerCouse>
-                <p>
+                <p
+                  style={{
+                    textAlign: "center",
+                    fontSize: "1rem",
+                    width: "70%",
+                  }}
+                >
                   Conheça seu público. Saber para quem você fala deve ser um dos
                   primeiros passos na hora de montar sua apresentação. ...
                   Conheça a si mesmo. ... Trace um roteiro. ... Ensaie. ...

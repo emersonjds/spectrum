@@ -27,13 +27,28 @@ export default function Opportunities() {
               <Title>
                 Professor <br /> particular
               </Title>
+              <Subtitle>Matemática</Subtitle>
+              <Description>
+                Ira atuar junto a equipe de desenvolvimento com clientes como
+                Magalu, Itau, Santander. Trabalho 100% remoto, prioridade para
+                autistas
+              </Description>
+
+              <District>SP, Sao Paulo</District>
+            </VacancyCard>
+          </Col>
+          <Col md={3}>
+            <VacancyCard>
+              <Title>
+                Desenvolvedor <br /> Flutter
+              </Title>
               <Subtitle>
-                Nisi minim mollit eiusmod nulla id consequat occaecat.
+                Desenvolvimento de aplicativos multiplataforma
               </Subtitle>
               <Description>
-                Sint magna ullamco dolore ullamco velit incididunt minim labore.
-                Irure in nostrud eu irure incididunt. Fugiat minim mollit minim
-                culpa sit reprehenderit fugiat adipisicing.
+                Ira atuar junto a equipe de desenvolvimento com clientes como
+                Magalu, Itau, Santander. Trabalho 100% remoto, prioridade para
+                autistas
               </Description>
               <District>SP, Sao Paulo</District>
             </VacancyCard>
@@ -41,15 +56,14 @@ export default function Opportunities() {
           <Col md={3}>
             <VacancyCard>
               <Title>
-                Professor <br /> particular
+                Analista de <br /> Contabilidade
               </Title>
               <Subtitle>
-                Nisi minim mollit eiusmod nulla id consequat occaecat.
+                Ira atuar na area portuária junto ao porto de Santos
               </Subtitle>
               <Description>
-                Sint magna ullamco dolore ullamco velit incididunt minim labore.
-                Irure in nostrud eu irure incididunt. Fugiat minim mollit minim
-                culpa sit reprehenderit fugiat adipisicing.
+                Analise de balanço e dados para industria naval e portuaria,
+                balancete e analise exploratoria de dados
               </Description>
               <District>SP, Sao Paulo</District>
             </VacancyCard>
@@ -57,31 +71,13 @@ export default function Opportunities() {
           <Col md={3}>
             <VacancyCard>
               <Title>
-                Professor <br /> particular
+                Instrutor
+                <br /> Mobile
               </Title>
-              <Subtitle>
-                Nisi minim mollit eiusmod nulla id consequat occaecat.
-              </Subtitle>
+              <Subtitle>Flutter, React Native, Android</Subtitle>
               <Description>
-                Sint magna ullamco dolore ullamco velit incididunt minim labore.
-                Irure in nostrud eu irure incididunt. Fugiat minim mollit minim
-                culpa sit reprehenderit fugiat adipisicing.
-              </Description>
-              <District>SP, Sao Paulo</District>
-            </VacancyCard>
-          </Col>
-          <Col md={3}>
-            <VacancyCard>
-              <Title>
-                Professor <br /> particular
-              </Title>
-              <Subtitle>
-                Nisi minim mollit eiusmod nulla id consequat occaecat.
-              </Subtitle>
-              <Description>
-                Sint magna ullamco dolore ullamco velit incididunt minim labore.
-                Irure in nostrud eu irure incididunt. Fugiat minim mollit minim
-                culpa sit reprehenderit fugiat adipisicing.
+                Ira atuar na construção de aulas para plataforma web de ensino a
+                distancia podendo fazer monitoria com alunos. 100% remoto.
               </Description>
               <District>SP, Sao Paulo</District>
             </VacancyCard>

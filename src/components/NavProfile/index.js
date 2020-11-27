@@ -59,15 +59,17 @@ const NavProfile = (props) => {
               </NavLink>
             </NavItem>
             <NavbarText>
-              <Button
-                style={{
-                  backgroundColor: "#9B519A",
-                  color: "#FFF",
-                  width: "10rem",
-                }}
-              >
-                Sair
-              </Button>
+              <Link to="/">
+                <Button
+                  style={{
+                    backgroundColor: "#9B519A",
+                    color: "#FFF",
+                    width: "10rem",
+                  }}
+                >
+                  Sair
+                </Button>
+              </Link>
             </NavbarText>
           </Nav>
         </Collapse>
